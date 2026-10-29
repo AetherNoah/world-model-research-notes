@@ -29,6 +29,12 @@ confidence_levels:
   - high
 
 tags:
+  - agentic-policy
+  - in-context-learning
+  - test-time-training
+  - world-action-model
+  - humanoid-control
+  - differentiable-dynamics
   - world-model
   - model-based-rl
   - generative-world-model

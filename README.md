@@ -14,6 +14,7 @@
 - [Dreamer 三代比较](series/dreamer-series.md)
 - [RSSM](topics/rssm.md)
 - [Latent Imagination](topics/latent-imagination.md)
+- [SuperMimic：可微世界模型与人形动作追踪](papers/model-based-rl/supermimic.md)
 
 ### 2. 生成式与交互式 World Model
 
@@ -29,6 +30,8 @@
 - [LingBot-VA 2.0](papers/embodied-world-models/lingbot-va-v2.md)
 - [LingBot-Map](papers/spatial-world-models/lingbot-map.md)
 - [LingBot 系列总结](series/lingbot-series.md)
+- [UniWAM：统一世界—动作模型](papers/embodied-world-models/uniwam.md)
+- [VPP2：视频生成先验与策略学习](papers/embodied-world-models/vpp2.md)
 
 ### 4. RL、Diffusion 与相关方法
 
@@ -38,10 +41,24 @@
 - [Diffusion 模型中的强化学习](topics/rl-for-diffusion-models.md)
 - [CoCA：Step-level Reward](papers/related-methods/step-level-reward-for-free.md)
 
+### 5. Agentic Policy 与 Robot-Use Agents
+
+[系列阅读与比较](series/agentic-policy.md)：按原始链接覆盖 Astranomy、RoboDojo 上的 Astra 评估、Galbot 的跨领域评估及匿名网页版本、Harness VLA、RoboBRIDGE，以及 Phillip Isola 的 Robot-Use Agents 观点文章。
+
+重点区分直接输出动作、调用冻结策略的 harness 与混合控制，并对照评测协议、模拟器是否暂停、推理延迟和 token 成本；匿名网页与论文版本之间的关系单独说明。
+
+### 6. 机器人 In-Context Learning 与 Test-Time Training
+
+[系列阅读与比较](series/robot-in-context-learning.md)：RoboTTT、WAM-TTT、StellaVLA、BPP、ICRT、Zeva 与 HOST。
+
+逐篇区分演示中的动作标签、不同 embodiment 的演示、测试时是否更新参数，以及任务进度与成功率的口径。用户清单中的 **ICIL** 对应完整题名 *In-Context Imitation Learning via Next-Token Prediction*，原论文的方法名为 **ICRT**。
+
 ## 论文系列
 
 - [Dreamer V1/V2/V3](series/dreamer-series.md)：RSSM、latent imagination、离散表征与跨任务稳定性的连续演化。
 - [LingBot World / VA / Map](series/lingbot-series.md)：生成式交互、机器人控制和流式三维重建三条互补路线。
+- [Agentic Policy](series/agentic-policy.md)：通用模型、控制器与执行 harness 的职责边界、评测协议和开销。
+- [机器人 ICL / TTT](series/robot-in-context-learning.md)：演示作为上下文、快权重与测试时更新的不同适配机制。
 
 完整书目、状态和一句话贡献见自动生成的 [Paper Index](PAPER_INDEX.md)。后续计划阅读 PlaNet、DIAMOND、OASIS、DDPO、TDPO 等工作，详见 [Roadmap](ROADMAP.md)。
 
